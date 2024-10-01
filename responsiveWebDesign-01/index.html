@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">This survey is to collect information about demographic and their usage of social media</p>
+        <fieldset>
+            <form method="post" id="survey-form" action="">
+                <label for="name-label" id="name-label">Enter your full name: <input required type="text" id="name" placeholder="Your name here..."></label>
+                <label for="email-label" id="email-label">Enter your valid email: <input required type="email" id="email" placeholder="Your email here..."></label>
+                <label for="number-label" id="number-label">How old are you: <input type="number" id="number" min="16" max="80" placeholder="21"></label>
+
+                <label for="referrer-label" id="referrer-label">Where did you here about this survey?
+                    <select name="dropdown" id="dropdown">
+                        <option value="1">Choose one</option>
+                        <option value="2">Social Media</option>
+                        <option value="3">Friends</option>
+                        <option value="4">Other</option>
+                    </select>
+                </label>
+
+                <p>Are You an avid internet user?(required)</p>
+                <label for="yes"><input type="radio" id="avid" name="internet-user" class="inline" value="1" checked>Yes</label>
+                <label for="no"><input type="radio" id="casual" name="internet-user" class="inline" value="0">No</label>
+
+                <p>Which social media you use? <span class="clue">(Check all that apply)</span></p>
+                <label for="facebook"><input type="checkbox" id="sosmed-checkbox" value="facebook">Facebook</label>
+                <label for="instagram"><input type="checkbox" id="sosmed-checkbox" value="instagram">Instagram</label>
+                <label for="reddit"><input type="checkbox" id="sosmed-checkbox" value="reddit">Reddit</label>
+                <label for="tumblr"><input type="checkbox" id="sosmed-checkbox" value="tumblr">Tumblr</label>
+                <label for="pinterest"><input type="checkbox" id="sosmed-checkbox" value="pinterest">Pinterest</label>
+                
+                <p>Describe your experience on social media</p>
+                <textarea name="sosmed-exp" id="sosmed-exp" class="input-textarea" placeholder="Enter your experience here..."></textarea>
+                <input type="submit" id="submit" class="submit-button" value="submit">
+            </form>
+        </fieldset>
+       
+    </body>
+
+
+</html>
