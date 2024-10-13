@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Documentation Page</title>
+    </head>
+    <body>
+        <nav id="navbar"><!-- #8 -->
+            <header>Python Documentation</header><!-- #9 -->
+            <!-- contain <a class="nav-link" href="desiredpath(id)"> in each item  -->
+
+            <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+                <li><a class="nav-link" href="#Conditional_Statements">Conditional Statements</a></li>
+                <li><a class="nav-link" href="#Loops">Loops</a></li>
+                <li><a class="nav-link" href="#Functions">Functions</a></li>
+                <li><a class="nav-link" href="#Reference">Reference</a></li>
+            </ul>
+        </nav>
+        
+        <!-- #1 -->
+        <main id="main-doc">
+            <!-- contain at least 10 <p>, 5 <code>, 5 <li> from all section  -->
+            <!-- #2  #4-->
+            <section class="main-section" id="Introduction">
+                <!-- #3 -->
+                <header>Introduction</header>
+                <article>
+                    <p>A great way to start learning Python is by writing a simple program that prints "Hello, World!" to the screen. To do this, type the following code:</p> <!-- #5 -->
+                    <code>print("Hello, World!")</code><!-- #6 -->
+                    <p>This command tells Python to output the text within the parentheses, making it a good introduction to understanding how Python displays results.</p><!-- #5 -->
+                </article>
+                
+            </section>
+            <!-- #4 -->
+            <section class="main-section" id="Data_Types">
+                <!-- #3 -->
+                <header>Data Types</header>
+                <article>
+                    <p>Python uses several data types to represent different kinds of information. Common data types include int for whole numbers like 10, float for decimal numbers like 10.5, str for text strings like "Hello", and bool for boolean values, which are either True or False. These types make Python versatile for handling various kinds of data.</p><!-- #5 -->
+                    <ul><!-- #7 -->
+                        <li>Text Type: 	str</li>
+                        <li>Numeric Types: 	int, float, complex</li>
+                        <li>Sequence Types: 	list, tuple, range</li>
+                        <li>Mapping Type: 	dict</li>
+                        <li>Set Types: 	set, frozenset</li>
+                        <li>Boolean Type: 	bool</li>
+                        <li>Binary Types: 	bytes, bytearray, memoryview</li>
+                        <li>None Type: 	NoneType</li>
+                    </ul>                
+                    <code>name = "Alice"      #string 
+                        age = 25            #integer 
+                        height = 5.8        #float</code><!-- #6 -->
+                    <p>Variables are containers for storing data. Python variables do not need explicit declarations.</p><!-- #5 -->
+                </article>                
+            </section>
+
+            <!-- #4 -->
+
+            <section class="main-section" id="Conditional_Statements">
+                <!-- #3 -->
+                <header>Conditional Statements</header>
+                <article>
+                    <p>Conditional statements in Python allow you to control the flow of your program based on specific conditions. For instance, if you want to display a message depending on whether a person is 18 or older, you can use an if statement as shown:</p><!-- #5 -->
+                <code>age = 18
+                    if age >= 18:
+                        print("You are an adult.") 
+                    else: 
+                        print("You are not an adult.")</code><!-- #6 -->
+                <p>This code checks if the age is 18 or higher; if so, it prints a message, otherwise, it provides an alternate message.</p><!-- #5 -->
+                </article>
+            </section>
+
+            <!-- #4 -->
+
+            <section class="main-section" id="Loops">
+                <!-- #3 -->
+                <header>Loops</header>
+                <article>                    
+                    <p>Loops let you repeat a section of code multiple times. There are two main types of loops in Python: for and while loops. <br>
+                        A for loop iterates over a sequence, such as a list or range of numbers. For example:</p><!-- #5 -->
+                    <code>for i in range(5): 
+                        print(i)</code><!-- #6 -->
+                    <p>This loop prints numbers from 0 to 4. <br>
+                        A while loop continues executing as long as a certain condition remains true. For instance:</p><!-- #5 -->
+                    <code>count = 0
+                        while count < 5:
+                            print(count)
+                            count += 1</code><!-- #6 -->
+                    <p>This loop prints numbers from 0 to 4 by incrementing count each time.</p>
+                </article>
+            </section>
+
+            <!-- #4 -->
+            <section class="main-section" id="Functions">
+                <!-- #3 -->
+                <header>Functions</header>
+                <article>
+                    <p>Functions allow you to encapsulate code that you want to reuse. You can create a function using the "def" keyword, followed by the function name and parentheses. Inside the function, write the code you want to run each time the function is called. Here’s an example:</p><!-- #5 -->
+                    <code>def greet(name):
+                        print("Hello, " + name + "!")
+                    greet("Alice")</code><!-- #6 -->
+                    <p>This function takes a parameter name and prints a personalized greeting when called.</p><!-- #5 -->
+                </article>
+            </section>
+
+             <!-- #4 -->
+             <section class="main-section" id="Reference">
+                <!-- #3 -->
+                <header>Reference</header>
+                <ul>
+                    <li>All the documentation in this page is taken from <a href="https://www.python.org/doc/">python.org</a></li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>
