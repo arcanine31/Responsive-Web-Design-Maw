@@ -51,8 +51,12 @@ a{
 
 .hero{
     margin-top: 16vh;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 15px;
     text-align: center;
+    max-width: 800px;
+    width: 100%;
 }
 
 .desc-section{
@@ -61,18 +65,20 @@ a{
 
 .grid{
     display: flex;
+    margin-bottom: 30px;
 }
 
 .description{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 40px;
 }
 
 .video-section{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin: 50px 0;
 }
 
 .video-section iframe{
@@ -84,7 +90,7 @@ a{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    margin-top: 75px;
+    margin-top: 30px;
 }
 
 .price{
