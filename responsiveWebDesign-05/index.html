@@ -4,16 +4,108 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width: device-width, initial-scale:1">
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Portfolio Pages</title>
     </head>
     <body>
         <header class="header" id="header">
-            <nav class="nav-bar" id="nav-bar">
+            <!-- navbar -->
+            <nav class="navbar" id="navbar">
                 <ul>
-                    <li><a class="nav-link" id="nav-link" href="#desc-section">Description</a></li>
-                    <li><a class="nav-link" id="nav-link" href="#video-section">Video</a></li>
-                    <li><a class="nav-link" id="nav-link" href="#price-section">Merch</a></li>
+                    <li><a class="nav-link" id="nav-link" href="#welcome-section">Introduction</a></li>
+                    <li><a class="nav-link" id="nav-link" href="#projects">Project</a></li>
+                    <li><a class="nav-link" id="nav-link" href="#contact-section">Connect</a></li>
                 </ul>
             </nav>
         </header>
+
+        <div class="page-wrapper" id="page-wrapper">
+            <!-- introduction  -->
+            <section class="welcome-section" id="welcome-section">
+                <h1>Hello, I am TAKA</h1>
+                <p>I am an aspiring web developer.</p>
+                <p>This is my portfolio pages of all my projects so far.</p>
+            </section>
+
+            <!-- projects section -->
+
+            <section class="projects-section" id="projects">
+                <h2 class="projects-header" id="projects-header"> Here are some of my projects</h2>
+
+                <div class="projects-grid">
+                    <div class="project-container project-tile" id="project-container">
+                        <div class="project-img" id="project-img"> 
+                            <img src="https://simp6.jpg5.su/images3/surveyforma77a64e4c7071f3f.jpg" alt="surveyform preview.jpg"/>
+                        </div>
+                        <div class="project-title" id="project-title">
+                            <a href="https://codepen.io/arcanine31/full/LYwmdJB">Survey Form</a>
+                        </div>
+                    </div>
+
+                    <div class="project-container project-tile" id="project-container">
+                        <div class="project-img" id="project-img"> 
+                            <img src="https://simp6.jpg5.su/images3/tributepageda01f7a3c54c9e3f.jpg" alt="tributepageda01f7a3c54c9e3f.jpg"/>
+                        </div>
+                        <div class="project-title" id="project-title">
+                            <a href="https://codepen.io/arcanine31/full/LYwmdXJ">SCANDAL Band Tribute Page</a>
+                        </div>
+                    </div>
+
+                    <div class="project-container project-tile" id="project-container">
+                        <div class="project-img" id="project-img"> 
+                            <img src="https://simp6.jpg5.su/images3/documentationpage2c742b2951b00fae.jpg" alt="documentationpage2c742b2951b00fae.jpg"/>
+                        </div>
+                        <div class="project-title" id="project-title">
+                            <a href="https://codepen.io/arcanine31/full/WNVJzLw">Python Documentation Page</a>
+                        </div>
+                    </div>
+
+                    <div class="project-container" id="project-container">
+                        <div class="project-img" id="project-img"> 
+                            <img src="https://simp6.jpg5.su/images3/productlandingc18b7e9bf3c0f4ca.jpg" alt="productlandingc18b7e9bf3c0f4ca.jpg"/>
+                        </div>
+                        <div class="project-title" id="project-title">
+                            <a href="https://codepen.io/arcanine31/full/xxvjWmj">Book Club Radio Landing Page</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Contact section -->
+            <section class="contact-section" id="contacts">
+                <div class="contact-header" id="contact-header">
+                    <h2>Let's Work Together ... </h2>
+                </div>
+
+                <div class="contact-container" id="contact-container">
+                    <a id="profile-link"
+                    href="https://www.linkedin.com/in/ataka-badrudduja/"
+                    target="_blank"
+                    class="btn contact-details"
+                    ><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+
+                    <a id="profile-link"
+                    href="https://github.com/arcanine31"
+                    target="_blank"
+                    class="btn contact-details"
+                    ><i class="fa fa-github"></i> Github</a>
+                </div>
+            </section>
+
+
+            <!-- footer -->
+            <footer>
+                <p>
+                  **This is just a test portfolio. All the projects here based on freecodecamp certification Project
+                </p>
+                <p>
+                  Created for
+                  <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp</a>
+                </p>
+            </footer>
+
+        </div>
+
+
     </body>
